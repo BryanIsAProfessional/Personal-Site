@@ -1,5 +1,3 @@
-import './all.sass'
-
 import React from 'react';
 import SocialsLinks from './SocialsLinks';
 

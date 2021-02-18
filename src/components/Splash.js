@@ -1,6 +1,5 @@
 //TODO: change css
 import React, { Component} from 'react'
-import './all.sass'
 import home_animation from '../img/home_animation';
 import Lottie from 'react-lottie';
 import Carousel from 'react-bootstrap/Carousel';

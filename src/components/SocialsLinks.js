@@ -1,5 +1,4 @@
 //TODO: change css
-import './all.sass';
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Button from 'react-bootstrap/Button';
