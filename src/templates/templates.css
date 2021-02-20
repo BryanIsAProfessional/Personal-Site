@@ -1,0 +1,14 @@
+.dark-background{
+  background-color: #1e1e1e;
+  color: #569CD6;
+  font-family: Consolas,monaco,monospace; 
+}
+
+.Title{
+  color: #D7BA7D;
+  font-family: Consolas,monaco,monospace; 
+}
+
+img{
+  max-width:60vw;
+}

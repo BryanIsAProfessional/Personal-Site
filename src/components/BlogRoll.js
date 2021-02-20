@@ -1,3 +1,4 @@
+import "./all.css"
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
@@ -10,49 +11,48 @@ class BlogRoll extends React.Component {
 
     return (
       <div className="BlogRoll">
-        <h1>
+        <h1 className="SecondaryTextColor">
           Recent Posts
         </h1>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="BlogPost" key={post.id}>
+            <div className="BlogPost border-bottom rounded" key={post.id}>
               <article
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
                 }`}
               >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+                <div className="row">
+                  <div className="col align-middle">
+                    <header>
+                      {post.frontmatter.featuredimage ? (
+                        <div className="featured-thumbnail">
+                          <PreviewCompatibleImage
+                            imageInfo={{
+                              image: post.frontmatter.featuredimage,
+                              alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                            }}
+                          />
+                        </div>
+                      ) : null}
+                      <h2 className="TertiaryTextColor">
+                        {post.frontmatter.title}
+                      </h2>
+                    </header>
+                  </div>
+                  <div className="col align-middle">
+                    <p>
+                      {post.excerpt}
+                      <br />
+                      <br />
+                      <Link className="button" to={post.fields.slug}>
+                        Keep Reading →
+                      </Link>
+                    </p>
+                  </div>
+                </div>
+                
+                
               </article>
             </div>
           ))}

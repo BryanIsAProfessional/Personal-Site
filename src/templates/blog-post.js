@@ -1,3 +1,4 @@
+import './templates.css'
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
@@ -15,10 +16,10 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section className="section dark-background">
       {helmet || ''}
       <div className="container content">
-        <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+        <h1 className="Title">
           {title}
         </h1>
         <p>{description}</p>

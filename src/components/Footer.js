@@ -1,3 +1,4 @@
+import './all.css'
 import React from 'react';
 import SocialsLinks from './SocialsLinks';
 
