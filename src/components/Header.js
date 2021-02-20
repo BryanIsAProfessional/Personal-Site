@@ -19,8 +19,8 @@ const Header = class extends React.Component {
             <Button className="btn btn-outline-secondary" onClick={() => redirect("/blog")}><img src={blogIcon} alt="my blog" /><p className="Default-font">Blog</p></Button>
           </header>
         </div>
-        <button className="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#header-collapsible" aria-expanded="false" aria-controls="header-collapsible">
-          <img src={downIcon} alt="open top menu" />
+        <button className="btn btn-outline-secondary" onClick={() => {}} type="button" data-toggle="collapse" data-target="#header-collapsible" aria-expanded="false" aria-controls="header-collapsible">
+          <img src={downIcon} alt="open top menu" id="flippable-icon"/>
         </button>
       </div>
     )

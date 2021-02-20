@@ -25,6 +25,9 @@ class BlogRoll extends React.Component {
                 <div className="row">
                   <div className="col align-middle">
                     <header>
+                      <h2 className="TertiaryTextColor">
+                        {post.frontmatter.title}
+                      </h2>
                       {post.frontmatter.featuredimage ? (
                         <div className="featured-thumbnail">
                           <PreviewCompatibleImage
@@ -35,9 +38,7 @@ class BlogRoll extends React.Component {
                           />
                         </div>
                       ) : null}
-                      <h2 className="TertiaryTextColor">
-                        {post.frontmatter.title}
-                      </h2>
+                      
                     </header>
                   </div>
                   <div className="col align-middle">
@@ -89,13 +90,6 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
               }
             }
           }
