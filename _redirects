@@ -1,0 +1,10 @@
+[[redirects]]
+from = "https://bryanisaprofessional.netlify.app"
+to = "/"
+status = 301
+force = false
+[[redirects]]
+from = "http://bryanisaprofessional.netlify.app"
+to = "/"
+status = 301
+force = false
