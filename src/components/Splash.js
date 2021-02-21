@@ -5,11 +5,14 @@ import Lottie from 'react-lottie';
 import SocialsLinks from './SocialsLinks';
 
 export default class Splash extends Component {
+  
   render(){
+    console.log(this.props);
     return(
       <div>
           <p className="site-title center">
-            Bryan is a professional
+            {this.props.title}
+            
           </p>
           <Lottie options=
             {
@@ -30,8 +33,14 @@ export default class Splash extends Component {
           <div className="bottom">
             <SocialsLinks/>
           </div>
-        </div>
           
+        </div>
+        <div className="width-80 center">
+          <div>
+            <p>{this.props.intro.description}</p>
+          </div>
+        </div>
+        
       </div>
     )
   }
