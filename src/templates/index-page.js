@@ -19,9 +19,7 @@ export const IndexPageTemplate = (props) => (
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  intro: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
@@ -52,13 +50,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        intro {
-          blurbs {
-            text
-          }
-          heading
-          description
-        }
+        intro
       }
     }
   }

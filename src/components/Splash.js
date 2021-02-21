@@ -35,9 +35,9 @@ export default class Splash extends Component {
           </div>
           
         </div>
-        <div className="width-80 center">
+        <div className="width-60 center">
           <div>
-            <p>{this.props.intro.description}</p>
+            <p>{this.props.intro}</p>
           </div>
         </div>
         
