@@ -53,5 +53,5 @@ Project Link: [https://github.com/bryanisaprofessional/Personal-Site](https://gi
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/bryanisaprofessional
-[netlify-shield]:https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys
-[netlify-url]:https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status
+[netlify-shield]: https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status
+[netlify-url]: https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys
